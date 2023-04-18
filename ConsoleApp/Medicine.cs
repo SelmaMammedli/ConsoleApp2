@@ -43,6 +43,26 @@ namespace ConsoleApp18.Models
             Medicine medicine = new Medicine(input);
             Context.Medicines.Remove(medicine);
         }
+         public void Update() 
+        {
+            Console.WriteLine("Kohne dermani daxil edin");
+            string input = Console.ReadLine();
+            Console.WriteLine("Yeni dermani daxil edin");
+            string output = Console.ReadLine();
+            Medicine category = new Medicine(input);
+            Medicine category2 = new Medicine(output);
+            //Context.Medicines.Replace(input,output);
+
+        }
+        public void Sell()
+        {
+            Console.WriteLine("Mehsulun adini daxil edin!");
+            string input= Console.ReadLine();
+            Medicine medicine1= new Medicine(input);
+            Count--;
+            
+            Console.WriteLine(Count);
+        }
 
     }
 }
