@@ -40,6 +40,13 @@ namespace ConsoleApp18.Models
         }
         public void Update()
         {
+            Console.WriteLine("Kohne kateqoryani daxil edin");
+            string input= Console.ReadLine();
+            Console.WriteLine("Yeni kateqoryani yazin");
+            string output= Console.ReadLine();
+            Category category = new Category(input);
+            Category category2 = new Category(output);
+           // Context.Categories.Replace(input,output);
 
         }
 
